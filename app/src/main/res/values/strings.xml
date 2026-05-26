@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
-
+    <string name="app_name">Adopta un Amigo Chile</string>
+    <string name="titulo_lista">Mascotas en adopción</string>
+    <string name="detalle_mascota">Detalle de la Mascota</string>
+    <string name="boton_adoptar">Contactar para adoptar</string>
+    <string name="boton_volver">Volver</string>
+    <string name="ubicacion_label">Ubicación: %1$s</string>
+    <string name="edad_label">Edad: %1$s</string>
+    <string name="descripcion_label">Descripción:</string>
+    <string name="toast_contacto">Abriendo contacto de la fundación...</string>
 </resources>
