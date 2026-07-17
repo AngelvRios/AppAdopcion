@@ -18,7 +18,7 @@ fun PetDto.toDomain(): Pet {
 
 fun Pet.toDto(): PetDto {
     return PetDto(
-        id = id,
+        id = if (id <= 0) 0 else id, // Ensure id is 0 for new pets
         nombre = nombre,
         especie = especie,
         edad = edad,
