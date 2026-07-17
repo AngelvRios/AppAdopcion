@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
+import coil.request.ImageRequest
+import coil.transform.RoundedCornersTransformation
 import com.periodization.myapplication.R
 import com.periodization.myapplication.databinding.ActivityDetailBinding
 import com.periodization.myapplication.domain.model.Pet

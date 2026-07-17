@@ -8,11 +8,11 @@ fun PetDto.toDomain(): Pet {
         id = id,
         nombre = nombre,
         especie = especie,
-        raza = raza,
+        raza = null, // Backend doesn't have raza, mapping to null
         edad = edad,
         descripcion = descripcion,
         imagenUrl = imagenUrl,
-        estado = estado
+        estado = null // Backend doesn't have estado, mapping to null
     )
 }
 
@@ -21,10 +21,10 @@ fun Pet.toDto(): PetDto {
         id = id,
         nombre = nombre,
         especie = especie,
-        raza = raza,
         edad = edad,
+        genero = "Macho", // Default or extract from description
+        municipio = "Ciudad", // Default or map from somewhere
         descripcion = descripcion,
-        imagenUrl = imagenUrl,
-        estado = estado
+        imagenUrl = imagenUrl
     )
 }

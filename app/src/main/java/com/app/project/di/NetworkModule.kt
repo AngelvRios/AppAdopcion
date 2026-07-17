@@ -21,7 +21,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private const val BASE_URL = "https://TU_API.com/"
+    private const val BASE_URL = "http://10.70.113.70:8080/"
 
     @Provides
     @Singleton
@@ -53,6 +53,11 @@ object NetworkModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
+    @Provides
+    @Singleton
+    fun providePetApiService(retrofit: Retrofit): com.periodization.myapplication.data.remote.PetApiService = 
+        retrofit.create(com.periodization.myapplication.data.remote.PetApiService::class.java)
 
     @Provides
     @Singleton

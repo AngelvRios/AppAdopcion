@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -37,9 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
+        viewBinding = true
     }
 }
 
@@ -63,6 +62,7 @@ dependencies {
     // Networking & Images
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
+    implementation(libs.coil)
     implementation(libs.coil.compose)
 
     // Hilt

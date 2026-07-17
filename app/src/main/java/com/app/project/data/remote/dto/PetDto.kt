@@ -4,11 +4,11 @@ import com.google.gson.annotations.SerializedName
 
 data class PetDto(
     @SerializedName("id") val id: Int,
-    @SerializedName("nombre") val nombre: String,
-    @SerializedName("especie") val especie: String,
-    @SerializedName("raza") val raza: String,
-    @SerializedName("edad") val edad: Int,
-    @SerializedName("descripcion") val descripcion: String,
-    @SerializedName("imagen_url") val imagenUrl: String,
-    @SerializedName("estado") val estado: String
+    @SerializedName("name") val nombre: String,
+    @SerializedName("type") val especie: String?,
+    @SerializedName("age") val edad: String?,
+    @SerializedName("gender") val genero: String?,
+    @SerializedName("location") val municipio: String?,
+    @SerializedName("description") val descripcion: String?,
+    @SerializedName("imageUrl") val imagenUrl: String?
 )
